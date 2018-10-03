@@ -85,6 +85,7 @@ function ready(datapoints) {
         .attr('stroke', 'none')
         .attr('fill', 'red')
         .attr('fill-opacity', 0.25)
+
       svg
         .append('text')
         .text(d.key)
@@ -133,3 +134,9 @@ function ready(datapoints) {
         .call(yAxis)
     })
 }
+
+export {
+  xPositionScale,
+  yPositionScale,
+  width,
+  height}

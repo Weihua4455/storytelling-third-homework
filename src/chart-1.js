@@ -55,13 +55,14 @@ let colorScale = d3
     '#e31a1c',
     '#fdbf6f',
     '#ff7f00',
-    '#cab2d6'
+    '#cab2d6',
+    '#a1d76a'
   ])
 
 // Write your ready function
 
 function ready(datapoints) {
-  console.log(datapoints)
+  // console.log(datapoints)
 
   // Convert your months to dates
   datapoints.forEach(d => {
@@ -83,7 +84,7 @@ function ready(datapoints) {
     })
     .entries(datapoints)
 
-  console.log('nested data looks like: ', nested)
+  // console.log('nested data looks like: ', nested)
 
   // Draw your lines
   svg
@@ -185,4 +186,14 @@ function ready(datapoints) {
     .append('g')
     .attr('class', 'axis y-axis')
     .call(yAxis)
+}
+
+export {
+  xPositionScale,
+  yPositionScale,
+  colorScale,
+  line,
+  width,
+  height,
+  parseTime
 }

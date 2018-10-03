@@ -135,8 +135,4 @@ function ready(datapoints) {
     })
 }
 
-export {
-  xPositionScale,
-  yPositionScale,
-  width,
-  height}
+export { xPositionScale, yPositionScale, width, height }

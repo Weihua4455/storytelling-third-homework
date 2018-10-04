@@ -106,7 +106,7 @@ function ready(datapoints) {
         .scaleOrdinal()
         .domain([0, 1, 2, 3, 4])
         .range(['#236085', '#96bccf', '#cac7c7', '#ee9f71', '#c9604b'])
-
+      // console.log(nested)
       tempList.forEach(function(d, i) {
         // console.log('what is d', d)
         // console.log('what is i', i)
